@@ -13,7 +13,7 @@ export const styles = [
   { slug: 'project-next', name: 'Project Next', feeling: 'Хочется большего погружения', text: 'Описание программы и различия между группами уточняются. Поможем узнать подробности перед выбором занятия.', image: 'backstage', tag: 'ПРОГРАММА ШКОЛЫ' },
   { slug: 'kids-dance', name: 'Kids Dance', feeling: 'Хочется начать танцевать', text: 'Занятия для детей от 5 лет. Содержание программы, уровень и длительность уточняются перед записью.', image: 'kids', tag: 'ПЕРВЫЕ ШАГИ' },
 ];
-export type Group = { id: string; style: string; days: string; dayType: 'weekdays' | 'weekend'; time: string; min: number | null; max?: number; age: string; adult?: boolean };
+export type Group = { id: string; style: string; days: string; dayType: 'weekdays' | 'weekend'; time: string; min: number | null; max?: number; age: string; adult?: boolean; teacher?: string; level?: string; capacity?: number | null; enrolled?: number | null; duration?: number | null; active?: boolean };
 export const groups: Group[] = [
   { id: 'mix-mon', style: 'Dance Mix', days: 'ПН / СР', dayType: 'weekdays', time: '15:00', min: 4, max: 6, age: '4–6 лет' },
   { id: 'girls-mon-16', style: 'Girls Hip-Hop', days: 'ПН / СР', dayType: 'weekdays', time: '16:00', min: 6, age: '6+ лет' },
